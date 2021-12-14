@@ -7,7 +7,15 @@
 
 Jane:
 hello hello
-Suki:
 
+Suki: 
+Done
+Solutions：
+1. 双指针查找，用了enumerate
+2. 判断+-符号，用底数10反转
+3. 判断+-符号，用底数10反转
+4. hash表, 比较前后大小，减小前，加大前,用了enumerate
+5. 排序字符串列表，取最长和最短的字符串进行配对比较
 
 Any comment? 
+OUT OF RANGE
