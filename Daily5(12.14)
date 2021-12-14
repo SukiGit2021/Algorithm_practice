@@ -6,7 +6,13 @@
 
 
 Jane:
-hello hello
+Done
+Solutions:
+1. dictionary{number: index}，用dict查找target-number是否存在，提升查找速度
+2. 用flag储存正负号，取number的绝对值reverse，最后乘以flag
+3. 判断正负，返回str(x)和str(x)[::-1]的比较结果
+4. dictionary{symbol: value}，比较相邻字母的value，进行加减
+5. min(list), 每个字母和list中其他元素相应位置字母挨个比较
 
 Suki: 
 Done
