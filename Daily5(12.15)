@@ -7,6 +7,11 @@
 
 Jane:
 
-Suki:
+Suki: Done
+1. stack
+2. sorted link list, compare node.next
+3. 双指针
+4. search for target, once find, nums.remove(target)
+5. 长度匹配，范围查找 h[i:i+查找长度]
 
 Any comment?
