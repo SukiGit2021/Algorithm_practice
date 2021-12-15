@@ -6,6 +6,15 @@
 
 
 Jane:
+Done
+Solution:
+1. Stack
+2. linked list的组成和工作原理
+3. 把nums强制转换成set去除重复元素，再排序,输出长度
+4. while loop, remove elements that are equal to value
+5. Excluding a few special cases and use .find() to return the result
+
+
 
 Suki: Done
 1. stack
