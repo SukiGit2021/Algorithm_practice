@@ -6,6 +6,8 @@
 
 
 Jane:
+1. Binary Search，注意放在相同数值前面
+2. 
 
 Suki:
 1. 因为是有序list，判断最后一位和target的大小，<= target， 返回长度。 > target的部分用binary search查找位置.
