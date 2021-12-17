@@ -7,7 +7,12 @@
 
 Jane:
 1. Binary Search，注意放在相同数值前面
-2. 
+2. 动态规划，Kadane's algorithm（对于每次新的判断只有两种情况：1.前面相邻的subarray为正数，需要包含进去 2.前面相邻的subarray为负数，不需要包含）
+3. split后取list中最后一个element的length
+4. convert to int and plus one
+5. 设置flag作为进位值，把a和b从最低位开始pop出来，s=a[-1]+b[-1]+flag，s%2是当前位上的值，s//2是进位值flag。注意a和b长度不同，需要判断。
+
+
 
 Suki:
 1. 因为是有序list，判断最后一位和target的大小，<= target， 返回长度。 > target的部分用binary search查找位置.
