@@ -6,6 +6,9 @@
 
 
 Jane:
+1. Binary search, mid*mid ? x
+2. Fibonacci number，(a, b = b, a+b)。for step n, it can be reached by [n-1] and [n-2], need to sum both of them.
+3. 
 
 Suki:
 1. 双指针查找，找到平方==x的底数。
