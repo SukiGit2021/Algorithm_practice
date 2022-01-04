@@ -8,7 +8,15 @@
 Jane:
 1. Binary search, mid*mid ? x
 2. Fibonacci number，(a, b = b, a+b)。for step n, it can be reached by [n-1] and [n-2], need to sum both of them.
-3. 
+3. 双指针。如果相同 就把p2指向下一个 p1.next指向p2 来remove duplicate。否则同时指向下一个
+4. 把两个array从最大元素开始向前比较，大的一个赋给nums1的最后一个位置。如果nums2余下元素全copy给nums1
+5. Depth First Traversals:
+   Preorder: Root, Left, Right
+   Postorder: Left, Right, Root
+   Inorder: Left, Root, Right
+   a. 当root存在，把当前root下所有的左节点压入堆栈
+   b. 当root不存在，从堆栈中pop出node，把node的value加入list，并把root指向node.right
+   
 
 Suki:
 1. 双指针查找，找到平方==x的底数。
