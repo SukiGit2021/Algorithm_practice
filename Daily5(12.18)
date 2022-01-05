@@ -6,6 +6,9 @@
 5. Balanced Binary Tree (#110)
 
 Jane:
+1. Recursively compare p.val, p.left and p.right
+2. 
+
 
 Suki: 3/5
 1. 检查两个tree的node数量是否相同，若相同则比较每个节点是否相同
