@@ -11,7 +11,9 @@ Jane:
 3. 递归调用函数自己，返回左右节点中最大的一个+1
 4. Binary Search Tree: 左小右大
    递归调用，root为当前list中间的元素mid，root.left为mid左边的list，root.right为mid右边的list
-5. 
+5. Balanced Binary Tree:
+   A binary tree in which the left and right subtrees of every node differ in height by no more than 1.
+   
 
 Suki: 3/5
 1. 检查两个tree的node数量是否相同，若相同则比较每个节点是否相同
