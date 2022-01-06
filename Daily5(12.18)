@@ -7,8 +7,8 @@
 
 Jane:
 1. Recursively compare p.val, p.left and p.right
-2. Recursively compare left.left ? right.right, and left.right ? right.left
-
+2. Recursively compare left.left ? right.right, and left.right ? right.left. If one of them are not equal, return False.
+3. 递归调用函数自己，返回左右节点中最大的一个+1
 
 Suki: 3/5
 1. 检查两个tree的node数量是否相同，若相同则比较每个节点是否相同
