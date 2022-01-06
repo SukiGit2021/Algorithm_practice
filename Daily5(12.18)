@@ -7,7 +7,7 @@
 
 Jane:
 1. Recursively compare p.val, p.left and p.right
-2. 
+2. Recursively compare left.left ? right.right, and left.right ? right.left
 
 
 Suki: 3/5
