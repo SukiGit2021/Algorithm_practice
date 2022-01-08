@@ -13,6 +13,8 @@ Jane:
    递归调用，root为当前list中间的元素mid，root.left为mid左边的list，root.right为mid右边的list
 5. Balanced Binary Tree:
    A binary tree in which the left and right subtrees of every node differ in height by no more than 1.
+   function dfs: 递归计算每个root的深度
+   function isBalanced: root为none，返回true；判断左右节点绝对值，如果小于等于1，则递归计算子节点
    
 
 Suki: 3/5
