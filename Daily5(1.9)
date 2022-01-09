@@ -9,5 +9,8 @@ Jane:
 
 
 Suki:
+1. 快慢指针，快指针追上慢指针就是闭环
+2. preorder root，left，right, 用stack做，先进后出
+3. preorder之后翻转一下
 
 Any comment:
