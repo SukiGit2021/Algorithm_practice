@@ -10,7 +10,7 @@ Jane:
 2. Preoder: root, left, right
    stack先进后出，append的时候需要先currentNode.right，再currentNode.left
 3. Postorder: Left, Right, Root
-   把Preorder翻转一下
+   把Preorder翻转一下 (这里的Preorder需要先left，后right)
 4. 
    
 
