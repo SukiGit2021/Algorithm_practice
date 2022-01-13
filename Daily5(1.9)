@@ -6,6 +6,14 @@
 
 
 Jane:
+1. 追及问题，当fast追上了slow，即cycle
+2. Preoder: root, left, right
+   stack先进后出，append的时候需要先currentNode.right，再currentNode.left
+3. Postorder: Left, Right, Root
+   把Preorder翻转一下
+4. 
+   
+
 
 
 Suki:
