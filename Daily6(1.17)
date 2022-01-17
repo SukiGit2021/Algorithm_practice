@@ -10,6 +10,12 @@
 Jane:
 
 
-Suki:
+Suki: 
+1. hash表存a的node，然后遍历b，如果存在hash表中则相交了。
+2. 取极端双指针，左右两端加起来等于target则返回index+1，小于target，左端往前，大于target，右端后退。
+3. a-z 1-27, 减1变为a-z 0-26， 26进制运算
+4. 出现加1，首次出现为1，最后most = max(dict, key=dict.get)
+5. 26进制转10紧致，乘以26-65, 第三题的反运算
+6. Select p.FirstName,p.LastName,  a.City,a.State from Person p left join Address a on p.PersonId = a.PersonId;
 
 Any comment:
