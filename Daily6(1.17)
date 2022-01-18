@@ -8,6 +8,18 @@
 
 
 Jane:
+1. 如果有intersection，list(A+B)与list(B+A)会在最后部分重合
+2. method 1: Binary Search
+   method 2: 双指针，从两端开始，判断目前和与target的关系。如果大于，尾部指针往前移；如果小于，头部指针往后移。
+   method 3: 建立dict，查找target-num是否在字典里，若没有则增加
+3. 十进制 --> 二十六进制，每次除以26取余数
+4. 字典计数，每次更新value后判断是否大于n/2
+5. 十进制 --> 二十六进制
+6. 
+SELECT firstName, lastName, city, state 
+FROM Person LEFT JOIN Address
+ON Person.personId = Address.personId
+
 
 
 Suki: 
