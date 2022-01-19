@@ -7,6 +7,32 @@
 
 
 Jane:
+1. 
+SELECT a.name AS Employee
+From Employee a INNER JOIN Employee b
+ON a.managerId = b.id
+WHERE a.salary > b.salary
+2. 
+SELECT email as Email
+From Person
+GROUP BY email
+HAVING COUNT(email) > 1
+3. 
+SELECT name AS Customers
+FROM Customers LEFT JOIN Orders
+ON Customers.id = Orders.customerId
+WHERE customerId IS NULL
+4. 
+把n转换为32 bit binary representation，再左右翻转，再转换为int
+{0:032b} converts the integer to 32 bit binary representation.
+[::-1] reverses the string
+int(n, 2) converts binary to int
+5.
+把n转换为32 bit binary representation，字典遍历，输出'1'的value
+6.
+
+
+
 
 
 Suki:
