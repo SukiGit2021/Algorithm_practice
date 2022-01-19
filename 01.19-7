@@ -9,7 +9,13 @@
 
 
 Jane:
-
+1. 
+2. 
+DELETE p
+FROM Person p, Person q
+WHERE p.email = q.email AND p.id > q.id
+3.
+用set判断跳出循环的条件
 
 
 Suki:
