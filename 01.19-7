@@ -19,6 +19,26 @@ WHERE p.email = q.email AND p.id > q.id
 
 
 Suki:
+1. 
+# sed -n '10p;11q' file.txt
+# awk 'NR==10{print;exit}' file.txt
+# awk 'FNR==10{print;exit}' file.txt
+
+2. DELETE P1 from Person P1, (SELECT min(Id) as Id,Email 
+from Person group by Email HAVING count(Email)>1) as P2 
+where P1.Id != P2.Id and P1.Email = P2.Email;
+
+3.
+sql: SELECT W1.id FROM Weather W1, Weather W2 
+WHERE W1.Temperature > W2.Temperature and DATEDIFF(W1.recordDate,W2.recordDate)=1;
+
+oracle：select W1.id from Weather W1, Weather W2 
+where W1.recordDate - W2.recordDate=1 and W1.temperature>W2.temperature;
+
+4. 辅助方程计算数字和，用快慢指针判断是否有交点，有交点不为快慢数，永远无法=1
+5. 遇到val，移动到下一个node
+6. 判断index结构是否一样 s.index(s[i]) == t.index(t[i])
+7.
 
 
 
