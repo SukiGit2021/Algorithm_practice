@@ -1,10 +1,11 @@
 1. Tenth Line(#195)
 2. Delete Duplicate Emails(#196)
-3. Rising Temperature (#202)
-4. Remove Linked List Elements (#203)
-5. Isomorphic Strings (#205)
-6. Reverse Linked List(#206)
-7. Contains Duplicate(#217)
+3. Rising Temperature (#197)
+4. Happy Number(#202)
+5. Remove Linked List Elements (#203)
+6. Isomorphic Strings (#205)
+7. Reverse Linked List(#206)
+8. Contains Duplicate(#217)
 
 
 
@@ -15,7 +16,15 @@ DELETE p
 FROM Person p, Person q
 WHERE p.email = q.email AND p.id > q.id
 3.
+SELECT w2.id
+FROM Weather AS w1, Weather AS w2
+WHERE DATEDIFF(w2.recordDate, w1.recordDate) = 1 AND w2.temperature > w1.temperature
+4.
 用set判断跳出循环的条件
+5.
+
+
+
 
 
 Suki:
