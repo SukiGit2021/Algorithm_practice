@@ -21,6 +21,17 @@ dict{key：数字，value：出现的上一次index}
 
 
 Suki:
+1. method1：双循环（在这里超时了） method2: hash表，键为数字，值为index，判断数字是否出现第二次，index相减绝对值是否<=k。
+nums[i] in container and abs(container[nums[i]]-i)<=k
+
+2. queue1为主，queue2为辅助, 当que1有元素的时候，将新元素放进que2再将que1的元素移动到que2，对换q1和q2.
+while len(self.q1)>0:
+      self.q2.append(self.q1.popleft())
+self.q1,self.q2 = self.q2,self.q1
+
+3. 递归遍历左右节点，对换左右节点 root.left,root.right = root.right,root.left
+
+4.
 
 
 
