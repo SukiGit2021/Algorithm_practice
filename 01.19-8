@@ -62,7 +62,8 @@ where W1.recordDate - W2.recordDate=1 and W1.temperature>W2.temperature;
 4. 辅助方程计算数字和，用快慢指针判断是否有交点，有交点不为快慢数，永远无法=1
 5. 遇到val，移动到下一个node
 6. 判断index结构是否一样 s.index(s[i]) == t.index(t[i])
-7.
+7. 当是node，往后递归，一直到none，为表尾。从表尾反向往前走。
+8. hash表存储键值对，判断值>1.   method2: set()判断是否重复. method3:sort之后看相邻数字是否相同。
 
 
 
