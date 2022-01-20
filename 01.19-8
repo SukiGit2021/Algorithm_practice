@@ -37,6 +37,7 @@ tmp：储存后面的linked list，防止linked list从此断开
 过程：
 让tmp先指向后面的linked list，断开pre和cur之间的指针，使cur重新指向pre，再把pre和cur分别向后移一个单位，直到cur指向none
 8.
+dict
 
 
 
