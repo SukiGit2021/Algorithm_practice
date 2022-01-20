@@ -8,6 +8,14 @@
 
 
 Jane:
+1. 
+dict{key：数字，value：出现的上一次index}
+如果val在dict的key里，判断与对应的value之差是否<=k
+否则把dict[val]等于最新的index
+2. 
+1) Python里的queque用deque()，可以用append(), appendleft(), pop(), popleft()
+2) 在push()里，stack是先进先出，但是实际用的queue是先进后出。为了让push进来的元素最先出去，需要把它放到queue的最前端，因此需要创建一个新的queue。
+3.
 
 
 
