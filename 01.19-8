@@ -22,7 +22,21 @@ WHERE DATEDIFF(w2.recordDate, w1.recordDate) = 1 AND w2.temperature > w1.tempera
 4.
 用set判断跳出循环的条件
 5.
-
+建立一个Listnode的对象，下一个node指向给定list的head，判断next是否等于value，返回第二个node
+6. 
+把s和t中出现的每个字母放入dict，key：字母，value：index list
+返回比较两个sorted(dict.values())
+d1.get(val, [])：在d1中查找value为val的相应的key，若有返回key，若无返回[]
+两个list相加为合并
+7. 
+https://www.bilibili.com/video/BV1KZ4y157Up?from=search&seid=13100111875970136020&spm_id_from=333.337.0.0
+三个指针:
+pre：指向前一个node
+cur：指向当前的node
+tmp：储存后面的linked list，防止linked list从此断开
+过程：
+让tmp先指向后面的linked list，断开pre和cur之间的指针，使cur重新指向pre，再把pre和cur分别向后移一个单位，直到cur指向none
+8.
 
 
 
