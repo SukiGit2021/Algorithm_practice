@@ -14,6 +14,10 @@ Jane:
 
 Suki:
 
+1. 遍历所有head然后对比 nodes == nodes[::-1]
+2. root大于p,q的时候左移， 小于的时候右移。
+3. node = node.next  node.next = node.next.next
+
 
 
 Any comment:
