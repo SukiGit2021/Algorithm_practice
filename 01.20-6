@@ -38,7 +38,7 @@ method1:  contaienr = [2**i for i in range(32)]
 method2: while (n%2 ==0):n/=2 判断最后n是否为1
 method3: return n&(n-1) == 0  0010&0001
 
-6.
+6. push进stack1，pop的时候将stack1的push到stack2，完成顺序反转
 
 
 Any comment:
