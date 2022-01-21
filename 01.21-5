@@ -17,7 +17,11 @@ Suki:
 1. 遍历所有head然后对比 nodes == nodes[::-1]
 2. root大于p,q的时候左移， 小于的时候右移。
 3. node = node.next  node.next = node.next.next
-
+4. 
+method1: 双字典 container_s == container_t
+method2: list存储char，排序后比较list是否相等
+method3: 计数器 Counter(s) == Counter(t)
+5. 从root开始，一直走到没有left node和right node为一个阶段。
 
 
 Any comment:
