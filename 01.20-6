@@ -31,8 +31,14 @@ self.q1,self.q2 = self.q2,self.q1
 
 3. 递归遍历左右节点，对换左右节点 root.left,root.right = root.right,root.left
 
-4.
+4.  res.append(str(nums[start])+'->'+ str(nums[i - 1]))
 
+5. 
+method1:  contaienr = [2**i for i in range(32)]
+method2: while (n%2 ==0):n/=2 判断最后n是否为1
+method3: return n&(n-1) == 0  0010&0001
+
+6.
 
 
 Any comment:
