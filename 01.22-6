@@ -25,6 +25,16 @@ while n%5 == 0: n //=5
 method2: 递归
 创建辅助方程递归n，调用方程判断 calculate(n) if n>=1 else False
 
+3.
+method1: 0,1,2,3 index=0,1,2,3 判断index和value是否一样，不一样就少了等于index的value 
+for i,j in enumerate(nums): if i == j: continue
+method2: hash for i in range(len(nums)+1): if i not in hash_: add
+
+4. 二分法缩减步骤，如果mid错了，mid-right的所有都是错的
+
+5.
+method1: 二分查找，遇0替换位置nums[i],nums[j] = nums[j],nums[i]
+method2: j = [所有不为0的]， nums-j = 0
 
 
 
