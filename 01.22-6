@@ -36,6 +36,7 @@ method2: hash for i in range(len(nums)+1): if i not in hash_: add
 method1: 二分查找，遇0替换位置nums[i],nums[j] = nums[j],nums[i]
 method2: j = [所有不为0的]， nums-j = 0
 
+6. hash表
 
 
 Any Comment:
