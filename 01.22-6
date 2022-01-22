@@ -13,6 +13,18 @@ Jane:
 
 
 Suki:
+1. method1: 写一个辅助方程计算数字相加， 然后用方程来计算题目，while num>=10: num = calculator(num)
+   method2: 加起来要为一位数那最大就是9，if num == 0: return 0 elif num%9 == 0: return 9 elif num%9 != 0: return num%9
+2. 
+method1: 
+质因数为2，3，5， 2^a * 3^b * 5^c = n, 
+while n%2 == 0: n //=2
+while n%3 == 0: n //=3
+while n%5 == 0: n //=5
+
+method2: 递归
+创建辅助方程递归n，调用方程判断 calculate(n) if n>=1 else False
+
 
 
 
