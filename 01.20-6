@@ -16,7 +16,7 @@ dict{key：数字，value：出现的上一次index}
 1) Python里的queque用deque()，可以用append(), appendleft(), pop(), popleft()
 2) 在push()里，stack是先进先出，但是实际用的queue是先进后出。为了让push进来的元素最先出去，需要把它放到queue的最前端，因此需要创建一个新的queue。
 3.
-1) 递归地把root.left = self.invertTree(root.right)
+1) 递归把root.left = self.invertTree(root.right)
 2)
 正确写法
 root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
@@ -24,8 +24,17 @@ root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
 root.left = self.invertTree(root.right)
 root.right = self.invertTree(root.left)
 4.
-
-
+双指针，如果前后差为1则加1，最后比较前后两个指针的值是否一致
+5. 
+当n是偶数，则迭代除以2
+否则跳出循环，判断是否为1
+6. 
+在push()里，queue是先进后出，但是实际用的stack是先进先出，为了让push进来的元素最后出去，需要把它放到stack的最前端，因此创建一个新的stack。
+```        
+  tmp = [x]
+  tmp = tmp + self.stack
+  self.stack = tmp
+```
 
 
 
