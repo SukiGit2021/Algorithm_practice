@@ -8,6 +8,8 @@
 
 
 Jane:
+1. 
+创建一个vals list，把linked list的每个val都放进去，返回vals == vals[::-1]
 
 
 
