@@ -16,7 +16,23 @@ Jane:
 
 
 Suki:
+1. n%4 != 0
 
+2. 
+method1: 遍历 sum(self.nums[left:right+1])
+method2: 存储每个数与前面区间之和  补0 right+1 - left = 区间
+
+3. 
+method1: while n > 0 and n%3 == 0: n //= 3
+method2: if n>0 and max_3%n == 0: return True
+
+4. number &= (number-1) 计算位与运算了几次
+
+5. 
+method1: while n > 0 and n % 4 == 0: n //= 4
+method2: 4^x % 3 == 1
+
+6. 双指针，left= right，right=left
 
 
 
