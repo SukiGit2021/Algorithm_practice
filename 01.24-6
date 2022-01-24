@@ -13,7 +13,15 @@ Jane:
 
 
 Suki:
+1. 将s转化为list，vowels放进list里面，双指针遍历s中每个元素，是vowel的左右元素交换位置。
+while i<j and s[i].lower() not in vowels:i +=1
+while j>i and s[j].lower() not in vowels:j -=1
 
+2.
+method1: 判断nums的长度，以短长度为遍历条件。nums1 in nums2, set().add.
+method2: set [x for x in set1 if x in set2]
+method3: 将nums1和nums2排序，从小到大比较数字大小
+method4: hash表随便存nums1或者nums2
 
 
 Any comment:
