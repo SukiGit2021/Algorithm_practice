@@ -14,8 +14,39 @@ Jane:
 
 
 Suki:
+1. 
+method1:
+先hash表存s中每个字母出现的次数，找到次数为1的，然后求index，返回index最小的数。
+for j in hash_:if hash_[j] == 1:res.append(j)
+for j in res:res_.append(s.index(j))
+return res_[0]
+method2: collections.Counter(s) 
+for i,j in enumerate(s):if freq[j] == 1: return i
+method3: dict()，重复出现的元素value为-1
+for k in dict_.values():
+if k != -1 and k<len(s):return k
 
+2. 
+method1: hash表存储s中每个元素，遍历t中元素与hash表比较，返回不同的元素。
+if hash_.get(j):hash_[j] -=1
+else:return j
 
+method2: t-s = difference (最快最方便)
+ if t.count(i) - s.count(i) == 1: return i
+
+method3: 两个dict() 比较 （占空间，新增两个dict）
+if flag not in dict_s or dict_s[flag] != dict_t[flag]:
+return flag
+
+method4: 内置函数counter
+countS = collections.Counter(s)
+countT = collections.Counter(t)
+for i in countT: if countT[i] != countS[i]:
+return i
+
+method5: s+i,每个元素必定是偶数
+combine = "".join([s,t])
+if combine.count(i) %2 == 1: return i
 
 
 Any comment:
