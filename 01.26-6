@@ -15,7 +15,44 @@ Jane:
 
 
 Suki:
+1. 2^32转化为16进制，0000为一组，一共八组
+range = [1,8]
+num%16 
+res.append(num%16)
+num//=16
 
+2. 
+method1: 
+Counter 如果是偶数次数的元素一定可以加入回文，如果是奇数次数，%2为1的，奇数作为中心数。
+res %2 == 0 and i%2 == 1:
+res+=1
 
+method2: dict()
+for k,v in dict_.items()
+v%2 == 0 or != 0
+res+1 if 1 in dict_.values() else res
+
+3. 依次判断条件就行
+s = ''
+if i%3 == 0:s += 'Fizz'
+if i %5 == 0:s+= 'Buzz'
+if i%3 !=0 and i%5 !=0:s = str(i)
+
+4. 
+method1：
+排序后判断不重复元素的个数是否大于2
+if len(res)<3: return max(nums)
+else: index = len(res) -3 
+return res[index]
+method2: 倒序
+res[2] if len(res)>2 else max(nums)
+
+5.
+method1:每个str，倒着相加每个数，逢10进1
+method2: 将短的str前面加0
+if len(num1)>len(num2):
+num2 = '0'*(len(num1) - len(num2))+num2
+if len(num1)<len(num2):
+num1 = '0'*(len(num2) - len(num1))+num1
 
 Any comment:
