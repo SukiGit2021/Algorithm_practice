@@ -48,5 +48,19 @@ method5: s+i,每个元素必定是偶数
 combine = "".join([s,t])
 if combine.count(i) %2 == 1: return i
 
+3. 以s和t的长度进行遍历，如果能够顺利将s遍历完就说明true
+while i < l1 and j < l2:
+if s[i] != t[j]:j+=1
+else: i+=1 j+=1
+return i == len(s)
+
+4. 做不来
+
+5.判断是否为叶子结点，判断是否为左节点，同时满足就加
+if cur_node.left and not cur_node.left.left and not cur_node.left.right:
+res += cur_node.left.val
+                
 
 Any comment:
+
+4. 做不来
