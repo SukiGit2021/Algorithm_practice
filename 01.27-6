@@ -18,6 +18,20 @@ Jane:
 
 
 Suki:
+1. i = [1:]
+n >= i的时候，进入下一层 res +=1
+while n>0: if n >= i: n = n - i i += 1 res += 1
+else:  return res
+method2: 二分 n*(n+1)//2
+
+
+2. 
+method1: 判断是否存在，不存在则添加
+for i in range(1,n+1,1):
+if i not in set_nums: res.append(i) return res
+
+method2: hash
+[1,n]中每个元素在hash中值为0，遍历nums，如果遇到元素则+1，最后检查hash中值为0的数
 
 
 
