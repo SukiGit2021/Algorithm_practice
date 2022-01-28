@@ -17,6 +17,31 @@ Jane:
 
 
 Suki:
+2. 
+method1: num化为bin,2^len(bin(num))的结果 = num+num的补数
+n = len(bin(num)[2:])
+sum_ = 2**n - 1
+res = sum_-num
+
+method2:
+num转化为二进制，0变为1，1变为0
+map(lambda x: '0' if x == '1' else '1',bin_num)
+
+3.从后往前，一个count计数（计已经加入了几个非‘-’的数），一个list加入元素。 当count/k为0的时候，就加个‘-’
+for i in range(len(s)-1,-1,-1):
+res.append(s[i].upper())
+count +=1
+if count % k == 0:
+res.append('-')
+
+4.
+method1: 一个数计数，遇到0变为1，遇到1就+1
+count = 0
+res = 0
+for i in nums:
+if i == 0:count = 0
+else:count +=1
+res = max(res,count)
 
 
 
