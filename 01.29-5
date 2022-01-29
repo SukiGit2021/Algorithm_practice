@@ -15,7 +15,33 @@ Jane:
 
 
 Suki:
+1.
+method1: dict()存储nums2中元素：{i:第一个>i的数}
+遍历nums1,看是否存在{i:>i}的元素，没有则返回-1
+for i in range(n2):
+for j in range(i+1,n2):
+if nums2[j]>nums2[i]:dict_[nums2[i]] = nums2[j]
+for k in nums1:res.append(dict_.get(k,-1))
 
+method2:
+stack
+while stack and stack[-1]<i:dict_[stack.pop()] = i
+
+method3:
+双循环，nums1的元素遇到nums2中相同元素时，遍历nums2中[相遇位置：end]元素，找到>相遇元素
+for i in nums1:
+            count += 1
+            j = 0
+            while j < len(nums2):
+                if nums2[j] == i:
+                    break
+                else:
+                    j+=1
+            while j<len(nums2)-1:
+                j+=1
+                if nums2[j] > i:
+                    res.append(nums2[j])
+                    break
 
 
 
