@@ -43,7 +43,20 @@ if i == 0:count = 0
 else:count +=1
 res = max(res,count)
 
+5. 
+W*W <= L*W = area
+area%w != 0:w -= 1
+return [area//w,w]
 
+6.
+method1:
+判断list中前后两个数的差异是否大于duration，大于等于就说明duration可以走完
+如果小于就说明走到后一个num的时候duration就提前结束
+if timeSeries[i]-timeSeries[i-1]>= duration:res += duration
+else:res += timeSeries[i] - timeSeries[i-1]
+注意要加上最后一次攻击，最后一次攻击一定会走完duration
+res += duration
+                
 
 
 
