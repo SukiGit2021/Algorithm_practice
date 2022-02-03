@@ -10,7 +10,16 @@
 Jane:
 1. 
 创建一个vals list，把linked list的每个val都放进去，返回vals == vals[::-1]
-
+2.
+若pq都大于root，root右移；若pq都小于root，root左移；直到root位于pq中间
+3. 
+不删去当前node，而是把node当作下一个点，删去下一个点
+step1: change the node value to the next node value
+step2: change the node next to the next node next
+4. 
+dict
+5.
+注意：此处返回的是从root到leaf的完整路径。和传统的dfs稍有不同，每次需要把（下一节点和完整路径）同时存入stack
 
 
 
