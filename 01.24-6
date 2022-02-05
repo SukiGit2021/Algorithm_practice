@@ -9,6 +9,13 @@
 
 
 Jane:
+1.
+双指针，注意区分指针移动的条件
+2.
+method1: 取两个set的交集
+method2: brute force，对于nums1中的每个element在nums2中比较
+method3: dict
+method4: 把nums1和nums2排序后用指针挨个比较
 
 
 
