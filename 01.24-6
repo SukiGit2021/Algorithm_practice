@@ -16,6 +16,15 @@ method1: 取两个set的交集
 method2: brute force，对于nums1中的每个element在nums2中比较
 method3: dict
 method4: 把nums1和nums2排序后用指针挨个比较
+3.
+一个字典记录nums1数字及其出现的次数，对nums2遍历，记录重复的数字输出
+4.
+二分法，取mid的平方和num比较
+5.
+在有序数列中找某数
+注意：[1],[2]等边界情况
+6.
+同3题
 
 
 
