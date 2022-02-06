@@ -54,7 +54,47 @@ count1 = count2 = count3 = 0
             if count1 == len(i) or count2 == len(i) or count3 == len(i):
                 res.append(i)
 
-method2: hash
+method2: hash表给每个list里面的元素加值，判断每个单词值是否全都一样
+        q1 = 'qwertyuiop'
+        q2 = "asdfghjkl"
+        q3 = "zxcvbnm"
+        hash_ = {}
+        for i in q1:
+            hash_[i] = 1
+        for i in q2:
+            hash_[i] = 2
+        for i in q3:
+            hash_[i] = 3
+ hash_[i[j].lower()] != hash_[i[j-1].lower()]:
+
+3.
+method1: hash存出现次数，返回次数max的
+method2: dict遍历
+method3: 中序遍历，小中大
+
+4. 判断正负，取绝对值，最后决定是否加负号
+res = res + str(remainder) 
+num //= 7
+if flag: res = '-' + res
+
+5.
+method1: hash
+for i in range(len(initial_score)):
+            if i == 0:hash_[initial_score[i]] = 'Gold Medal'
+            elif i == 1:hash_[initial_score[i]] = 'Silver Medal'
+            elif i == 2:hash_[initial_score[i]] = 'Bronze Medal'
+            else:
+                hash_[initial_score[i]] = str(initial_score.index(initial_score[i])+1)
+method2: dict()
+d = dict()
+        for index_,value in enumerate(score):
+            d[value] = index_
+        score.sort(reverse = True)
+        for i,num in enumerate(score,1):
+            if i <= 3:
+                ans[d[num]] = ['',"Gold Medal","Silver Medal","Bronze Medal"][i]
+
+        
 Comment:
 Happy Lunar New Year!
 Have a rest from 30/01/2022-03/02/2022
