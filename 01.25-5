@@ -8,6 +8,25 @@
 
 
 Jane:
+1.
+（思考：感觉遍历一次建立dict计数是跑不掉的，似乎没有更简单的方法了）
+遍历一次建立出现次数的dict，第二次遍历寻找char
+注意边界条件
+2.
+method1:
+建立dict，挨个查找
+method1:
+排序后比较对应位是否一致
+3.
+双指针。因为一些element移除后位置保持不变。当值相同时，移动s中的指针。最后比较s中的指针是否移动到了最后。
+注意边界条件
+4.
+1)二进制中1的个数就是需要的数字的个数，比如3(11)=2+1，11(1011)=8+2+1
+2)从12h和60m中遍历，选择二进制中1的数量加起来为turnedOn的输出
+3)02d formats an integer (d) to a field of minimum width 2 (2), with zero-padding on the left (leading 0)
+5.
+总的思路是在遍历时候把一个tuple加入stack，(node, is_left)
+从stack中pop出tuple时候，判断is_left是否为true，为true的话就加上
 
 
 
