@@ -44,7 +44,17 @@ for i in nums1:
                     break
 
 
+2. 
+method1: 遍历，比较长度
+count1 = count2 = count3 = 0
+            for j in list(i.lower()):
+                if j in q1: count1+=1
+                if j in q2: count2+=1
+                if j in q3: count3+=1
+            if count1 == len(i) or count2 == len(i) or count3 == len(i):
+                res.append(i)
 
+method2: hash
 Comment:
 Happy Lunar New Year!
 Have a rest from 30/01/2022-03/02/2022
