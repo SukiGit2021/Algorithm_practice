@@ -17,6 +17,25 @@ Suki:
 for i in range(0,len(nums),2):
             sum_ += nums[i]
             
+2.
+遍历左节点和右节点，相减就行
+l = dfs(rt.left)
+            r = dfs(rt.right)
+            self.res  += abs(l-r)
+
+3.
+method1: numpy
+np.array(mat).reshape((r,c)).tolist()
+metho2:
+手动做numpy
+res =[[0]*c for i in range(r)]
+        for i in range(m*n):
+            res[i//c][i%c] = mat[i//n][i%n]
+4.
+method1: 判断节点是否一样
+self.issame(root,subRoot) or self.isSubtree(root.left,subRoot) 
+or self.isSubtree(root.right,subRoot)
+
 5. set()
 diff = len(set(candyType))
         if n/2>=diff:
