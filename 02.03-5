@@ -16,9 +16,60 @@ Jane:
 
 
 Suki:
+1. method1: 找到所有因子相加 == num
+for i in range(1,int(num**0.5)+1):
+            if num%i == 0:
+                res.append(i)
+                res.append(num//i)
+method2: 数字二分
+ while i*i <=num:
+            if num%i == 0:
+                sum_ +=i
+                if i*i < num:
+                    sum_ += num/i
+2. 
+method1: 动态计算
+for i in range(2,n+1):
+            res.append((res[-1]+res[-2]))
+method2: 迭代
+i,j,sum_ = 0,0,1
+        for i in range(2,n+1):
+            i,j = j,sum_
+            sum_ = i+j
+            
+3. 
+method1: 计算三种情况
+global count
+            count = 1
+            for i in range(1,len(word)): 
+                if word[i] == word[i].upper():
+                    count += 1
+        return count == len(word) or count == 1
+         
+method2: 判断第二位后的元素是否全部都跟第二位格式一样
+[0:大小写无所谓，1:大，2:大，3:大.....n:大]
+[0:大小写无所谓，1:小，2:小，3:小.....n:小]
+if len(word)<2: return True
+        if word[0].isupper():
+            if len(word) == 2: return True
+            if word[1].isupper() and word[2:].isupper():
+                return True
+            if word[1].islower() and word[2:].islower():
+                return True
+                
+4.
+return max(len(a),len(b)) if a!=b else -1
 
-
-
+5.
+method1: 中序遍历，从小到大
+ if not root: return
+            dfs(root.left)
+            nums.append(root.val)
+            dfs(root.right)
+        dfs(root)
+        res = 99999999
+        for i in range(1,len(nums)):
+            if nums[i]-nums[i-1] < res: res = nums[i]-nums[i-1]
 
 
 Any comment?
