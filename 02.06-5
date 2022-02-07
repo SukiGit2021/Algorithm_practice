@@ -15,6 +15,30 @@ Jane:
 
 Suki:
 
+3. 
+method1: 计算各数出现次数，以及+1的数出现的次数
+for k,v in counts.items():
+            if k+1 in counts:
+                res = max(res,(v+counts[k+1]))
+                
+method2: dict()
+if i+1 in dict_:
+                res = max(res,dict_[i]+dict_[i+1])
+            if i-1 in dict_:
+                res = max(res,dict_[i]+dict_[i-1])
+                
+method3: 双指针，计算diff = 1的长度
+if nums[right]-nums[left]>1:
+                left += 1
+            if nums[right] - nums[left] == 1:
+                res = max(res,right-left+1)
+                
+4. sql:
+SELECT name,population,area FROM world WHERE area >= 3000000 or population >= 25000000;
+
+5. oracle: SELECT class FROM courses GROUP BY class HAVING COUNT(DISTINCT student)>4;
+sql:
+SELECT class FROM (SELECT class, COUNT(DISTINCT student) AS num FROM courses GROUP BY class) as course_copy WHERE course_copy.num >4;
 
 
 
