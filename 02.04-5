@@ -16,8 +16,46 @@ Jane:
 
 
 Suki:
+1. method1: 翻转奇数次k
+if j%2 == 0:
+ res += s[i:i+k]
+if j%2 == 1:
+ res +=s[i:i+k][::-1]
 
+method2:
+直接转，性能不好
+for i in range(0,len(t),2*k):
+            t[i:i+k] = reversed(t[i:i+k])
+2.
+左深度+右深度+本身-1=直径
 
+3. 遇到l连续+1，遇到其他的，初始化l
+             if i == 'P':
+                count_l = 0
+                continue
+            if i == 'A':
+                count_a+=1
+                count_l = 0
+            if i == 'L':
+                count_l +=1
+                max_l = max(max_l,count_l)
+                
+4. method1: 切片
+  for i in s.split(' '):
+            res = res + i[::-1]+' '
+        return res.strip()
+        
+method2:切片
+' '.join(i[::-1] for i in s.split(' '))
 
-
+method3:
+res = [i[::-1] for i in s.split(' ')]
+        return ' '.join(res)
+        
+        
+5. 
+method1:
+找到最大深度
+for node in root.children:
+            depth = max(depth,self.maxDepth(node)+1)
 comment?
