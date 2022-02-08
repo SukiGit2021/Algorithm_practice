@@ -15,7 +15,65 @@ Jane:
 
 
 Suki:
+1. 
+oracle mod(column,2) = 0 or 1
+SELECT id,movie,description,rating FROM cinema 
+WHERE description <> 'boring' AND MOD(id,2)=1
+ORDER BY rating DESC;
 
+sql: & or %
+SELECT id,movie,description,rating FROM cinema 
+WHERE description <> 'boring' AND id&1 ORDER BY rating DESC;
 
+SELECT id,movie,description,rating FROM cinema 
+WHERE description <> 'boring' AND id%2 = 1 ORDER BY rating DESC;
 
+2.
+oracle:
+CASE WHEN 
+UPDATE Salary SET sex = CASE
+WHEN sex = 'f' THEN 'm'
+WHEN sex = 'm' THEN 'f' 
+ELSE sex END;
+
+sql: 
+UPDATE Salary SET sex = IF(sex='m','f','m');
+
+3.
+all positive ints
+all negative ints
+2 positive and 1 positive
+if count >=3 or count == 0:
+            return max(nums[0]*nums[1]*nums[2],nums[-1]*nums[-2]*nums[0])
+        if count == 1:
+            return nums[0]*nums[-1]*nums[-2]
+        if count == 2:
+            return max(nums[0]*nums[1]*nums[2],nums[0]*nums[-2]*nums[-1])
+
+ q1 = nums[-1]*nums[-2]*nums[-3]
+        q2 = nums[0]*nums[1]*nums[-1]
+
+5.
+method1: for loop
+if len(nums) <= k:
+            return sum(nums[::])/float(k)
+        for i in range(len(nums)-k+1):
+            res = 0
+            for j in range(i,i+k):
+                res = sum(nums[i:i+k])
+            max_ = max(max_,res)
+            
+method2: sliding window
+  for i in range(k,n):
+            sum_ = sum_ - nums[i-k] + nums[i]
+            max_ = max(max_,sum_)
+        return max_/float(k)
+
+method3:
+        for i, num in enumerate(nums):
+            res += num
+            if i >= k:
+                res -= nums[i-k]
+            if i >= k-1:
+                max_ = max(max_,res)
 comment:
