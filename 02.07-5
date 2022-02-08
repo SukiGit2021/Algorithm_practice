@@ -15,8 +15,68 @@ Jane:
 
 
 Suki:
+1. calculate minimum public area
+  for a,b in ops:
+            mina = min(mina,a)
+            minb = min(minb,b)
+        return mina*minb
+        
+2. 
+method1: hash
+for i,j in enumerate(list1):
+            for k,v in enumerate(list2):
+                if j == v:
+                    hash_[j] = i+k
+        min_index = min(hash_.values())
+        for i in hash_:
+            if hash_[i] == min_index:
+                res.append(i)
+                
+method2: hash, syntax(faster)
+for i in list1:
+            if i in list2:
+                hash_[i] = list1.index(i)+list2.index(i)
+        for k,v in hash_.items():
+            if v == min(hash_.values()):
+                res.append(k)
 
+3.
+method1: faster
+[0,0,0] can place one flower
+if flowerbed[i-1] == 0 and flowerbed[i+1] == 0 and flowerbed[i] == 0:
+                n -=1
+                i+=2
+            else:
+                i+=1
+                
+method2: iterate all index
+if flowerbed[i] == 0:
+                if i == l-1 or flowerbed[i+1] == 0:
+                    n-=1
+                else:
+                    i+=3
+            i+=2
 
+4.
+no need to add brackets to leaf node and empty right node.
+res = str(root.val)
+        left = self.tree2str(root.left)
+        right = self.tree2str(root.right)
+        res += '('+left+')'
+        if right != '':
+            res += '('+right+')'
 
-
+5.
+method1: list + list
+node = TreeNode(root1.val+root2.val)
+        node.left = self.mergeTrees(root1.left,root2.left)
+        node.right = self.mergeTrees(root1.right,root2.right)
+method2: helper
+ def dfs(r1,r2):
+            if not (r1 and r2):
+                return r1 if r1 else r2
+            r1.val += r2.val
+            r1.left = dfs(r1.left,r2.left)
+            r1.right = dfs(r1.right,r2.right)
+            return r1
 comment:
