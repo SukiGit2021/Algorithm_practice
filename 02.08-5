@@ -52,6 +52,16 @@ if count >=3 or count == 0:
 
  q1 = nums[-1]*nums[-2]*nums[-3]
         q2 = nums[0]*nums[1]*nums[-1]
+        
+4. two containers: one is for summarize all nodes' values, another is for store nodes' numbers.
+ for i in range(size):
+                cur = que.popleft()
+                sum_+=cur.val
+                if cur.left:
+                    que.append(cur.left)
+                if cur.right:
+                    que.append(cur.right)
+            res.append(sum_/size)
 
 5.
 method1: for loop
