@@ -15,7 +15,121 @@ Jane:
 
 
 Suki:
+1.
+method1: use two hash table. correct hash table and real hash table.
+get difference between these two hash table.
+ for a,b in hash_.items():
+            if b == 2:
+                res.append(a)
+        for k,v in hash_cor.items():
+            if k not in hash_:
+                res.append(k)
+                
+method2: for loop
+situation 1: lost 1
+situation 2: lost end number
+situation 3: nums[i+1]-nums[i] == 2, lost nums[i]+1
+if i+1 < len(nums):
+                if nums[i+1] == nums[i]:
+                    duplicate = nums[i+1]
+                if nums[i+1] - nums[i] == 2:
+                    lost = nums[i]+1
+            if nums[0]!=1: lost = 1
+            if nums[-1]!=len(nums): lost = len(nums)
+            
+method3: counter
+value equals to 2 and disappearing digit
+        for i in range(1,len(nums)+1):
+            if i in counters and counters[i] == 2:
+                duplicate = i
+            if i not in counters:
+                lost = i
+        return [duplicate,lost]
 
+2.
+method1: iterate all nodes and then find summary
+def dfs(root):
+            if not root: return False
+            res.append(root.val)
+            dfs(root.left)
+            dfs(root.right)
+            return res
+        dfs(root)
+        for i in range(len(res)):
+            for j in range(len(res)):
+                if i!=j and res[i]+res[j] == k:
 
+method2: faster
+dfs + binary search
+while l<r:
+            if res[l]+res[r] == k:
+                return True
+            elif res[l]+res[r]>k:
+                r -= 1
+            else:
+                l +=1
 
+3.
+method1: count times
+counter = collections.Counter(moves)
+        if counter['U'] == counter['D'] and counter['L'] == counter['R']: 
+            return True
+        return False
+        
+method2: simulate coordinates
+            if i == 'L':
+                horizontal +=1
+            if i == 'R':
+                horizontal -=1
+            if i == 'U':
+                vertical+=1
+            if i == 'D':
+                vertical -=1
+                
+method3: hash+coordinate
+horizontal = {'L':1,'R':-1,'U':0,'D':0}
+        vertical = {'L':0,'R':0,'U':1,'D':-1}
+        x = y = 0
+        for i in moves:
+            x += horizontal[i]
+            y += vertical[i]
+            
+4.
+method1: iterate all nodes, all all digits which are greater than the minimum digit.
+        for i in res:
+            if i > min_:
+                min_second.append(i)
+        min_second.sort()
+        if len(min_second)!=0:
+            return min_second[0]
+        else:
+            return -1
+method2:
+find second minumum digits
+def dfs(root,cur):
+            nonlocal res
+            if not root: return
+            if root.val != cur:
+                if res == -1:
+                    res = root.val
+                else:
+                    res = min(res,root.val)
+                return
+            dfs(root.left,cur)
+            dfs(root.right,cur)
+
+5. nums[i+1]>nums[i]
+calculate maximum count
+for i in range(len(nums)):
+            if i+1 < len(nums) and nums[i+1]>nums[i]:
+                count += 1
+                max_ = max(count,max_)
+            else:
+                count = 1
+                
+method2: dynamic progressing
+dp=[1]*l
+        for i in range(1,l):
+            if nums[i]>nums[i-1]:
+                dp[i] = dp[i-1]+1
 Comment:
