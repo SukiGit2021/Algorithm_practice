@@ -93,6 +93,16 @@ horizontal = {'L':1,'R':-1,'U':0,'D':0}
         for i in moves:
             x += horizontal[i]
             y += vertical[i]
+
+4.
+caculate numbers and summary
+count = 0
+                for nr in (r-1,r,r+1):
+                    for nc in (c-1,c,c+1):
+                        if 0 <= nr < R and 0 <= nc < C:
+                            res[r][c] += img[nr][nc]
+                            count += 1
+                res[r][c] /= count
             
 5.
 method1: iterate all nodes, all all digits which are greater than the minimum digit.
