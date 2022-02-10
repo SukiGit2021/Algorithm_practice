@@ -13,6 +13,21 @@ Jane:
 
 
 Suki:
+1.
+method1: nums[i+1]>nums[i]
+calculate maximum count
+for i in range(len(nums)):
+            if i+1 < len(nums) and nums[i+1]>nums[i]:
+                count += 1
+                max_ = max(count,max_)
+            else:
+                count = 1
+                
+method2: dynamic progressing
+dp=[1]*l
+        for i in range(1,l):
+            if nums[i]>nums[i-1]:
+                dp[i] = dp[i-1]+1
 
 
 
