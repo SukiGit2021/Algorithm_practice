@@ -29,6 +29,91 @@ dp=[1]*l
             if nums[i]>nums[i-1]:
                 dp[i] = dp[i-1]+1
 
+2.
+method1: timeoverdue
 
+        # delete one char and store all possibilities into list
+        # iterate all new string in list to check palindrome
+        
+    def helper(s):
+            if s == s[::-1]:
+                return True
+            return False
+        ss = []
+        for i in range(len(s)):
+            ss.append(s[:i]+s[i+1:])
+        for i in ss:
+            if helper(i) == True:
+                return True
+        return False
+        
+method2: binary search from two boundaries
+while low<high:
+            if s[low]==s[high]:
+                low+=1
+                high-=1
+            else:
+                return hepler(low+1,high) or hepler(low,high-1)
+
+method3: bianry search
+        while left<=right:
+            if s[left] == s[right]:
+                left+=1
+                right-=1
+            else:
+                return helper(s[left+1:right+1]) or helper(s[left:right])
+
+3. 
+method1: stack
+for i in ops:
+            if i == 'C':
+                stack.pop()
+            elif i == 'D':
+                stack.append(int(stack[-1]*2))
+            elif i == '+':
+                stack.append(int(stack[-1])+int(stack[-2]))
+            else:
+                stack.append(int(i))
+
+method2: stack, 'C' is pop action.
+for i in ops:
+            if i !='C':
+                stack.append(i)
+            else:
+                stack.pop()
+        for i in range(len(stack)):
+            if stack[i] == 'D':
+                stack[i] = int(stack[i-1])*2
+            elif stack[i] == '+':
+                stack[i] = int(stack[i-1])+int(stack[i-2])
+        res = [int(i) for i in stack]
+
+4. 
+method1: iteration
+ max_ = float('-inf')
+        for i in range(1,len(res)):
+            if res[i] == res[i-1]:
+                count += 1
+            else:
+                count = 0
+            max_ = max(count,max_)
+            
+method2: no 00 and 11
+return ('00' not in bin(n)) and ('11' not in bin(n))
+
+method3: 1&0
+tmp = n^(n>>1)
+        return tmp&(tmp+1) == 0
+
+5. method1: count frequencies
+   for i in range(1,len(s)):
+            if s[i] == s[i-1]:
+                count[count_index] += 1
+            else:
+                count.append(1)
+                count_index+=1
+        res = 0
+        for j in range(1,len(count)):
+            res += min(count[j],count[j-1])
 
 comment:
