@@ -8,9 +8,18 @@
 
 
 Jane:
-
-
-
+1.
+dict()存储nums2中元素：{i:第一个>i的数}
+2.
+把word转换成set与每一行的字母set取交集，如果结果等于word_set，即为同一行
+3.
+Recursively check each node (root), if its value in dic, it adds one, else dic[node.value] = 1.
+Finally the method returns max values.
+4.
+判断正负，若负数则取绝对值，最后加负号。
+添加余数，num=商
+5.
+先排序，再一一对应找rank
 
 
 
