@@ -58,6 +58,16 @@ if not root: return None
             return root
         return self.searchBST(root.left if val < root.val else root.right,val)
 
+3. use heap stack
+heap container to store k length numbers
+heap is from low to high
+if new number is greater than first number in heaq, remove first number and add new number
+if len(self.heap) < self.k:
+            heapq.heappush(self.heap,val)
+        elif self.heap[0] < val:
+            heapq.heapreplace(self.heap,val)
+        return self.heap[0]
+
 4.
 while left<=right:
             mid = left+(right-left)//2
@@ -68,8 +78,10 @@ while left<=right:
             else:
                 left += 1
 
-3.
 5.
+error
+
 6.
+error
 
 Comment:
