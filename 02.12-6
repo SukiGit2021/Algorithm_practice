@@ -26,5 +26,47 @@ while i < len(bits)-1:
                 i+=1
         return i == len(bits)-1
 
+3. check longest words and compare sizes
+for word in words:
+            if len(word) == 1 or word[:-1] in res:
+                res.add(word)
+                if len(word)>len(max_):
+                    max_ = word
+        return max_
+
+4. left*2 + mid = all
+left == right, left+ right + pivot == all
+   l = len(nums)
+        sum_ = sum(nums)
+        presum = 0
+        for i in range(l):
+            if presum == sum_ - nums[i] - presum:
+                return i
+            presum += nums[i]
+        return -1
+
+5.
+convert number to string
+def helper(number):
+            for n in str(number):
+                if n == '0' or number%int(n) >0:
+                    return False
+            return True
+
+        res = []
+        for i in range(left,right+1):
+            if helper(i):                    
+                res.append(i)
+        return res
+method2: divisor
+while copy>0:
+                div = copy%10
+                copy //= 10
+                if div == 0 or num%div!=0:
+                    break
+            else:
+                res.append(num)
+6.
+
 
 comment:
