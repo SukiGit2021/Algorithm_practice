@@ -1,0 +1,37 @@
+1. Find Smallest Letter Greater Than Target(#744)
+2. Min Cost Climbing Stairs (#746)
+3. Largest Number At Least Twice of Others(#747)
+4. Shortest Completing Word(#748)
+5. Prime Number of Set Bits in Binary Representation(#762)
+
+
+
+
+Jane:
+
+
+
+
+Suki:
+1.
+for i in letters:
+            if i > target:
+                return i
+        return letters[0]
+method2: binary search
+   while left<=right:
+            mid = left + (right-left)//2
+            if letters[mid] <= target:
+                left +=1
+            elif letters[mid]>target:
+                right = mid -1
+        return letters[left%len(letters)]
+3.
+ max_ = max(nums)
+        for i in nums:
+            if i != max_ and i > max_/2:
+                return -1
+        return nums.index(max_)
+
+
+comment:
