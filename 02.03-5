@@ -9,7 +9,20 @@
 
 
 Jane:
-
+1.
+所有的数都是i,或者num/i,i在[2, num^(1/2)]
+最后别忘记加1
+2.
+recursively call fib function
+return fib(n-1)+fib(n-2)
+3.
+.isupper()
+.islower()
+.istitile()
+4.
+如果a和b不相同，返回其中length最长的一个
+5.
+先遍历所有点，把val加入res_list，再把res_list排序，然后先后做差，把最小值放mini
 
 
 
