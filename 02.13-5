@@ -33,5 +33,30 @@ method2: binary search
                 return -1
         return nums.index(max_)
 
+4. map
+for c in word:
+                if 'a'<=c<='z':
+                    conts[ord(c)- ord('a')] += 1
+                elif 'A'<=c<='Z':
+                    conts[ord(c)-ord('A')] += 1
+            return conts
+            
+5. count '1' in binary number
+for i in range(left,right+1):
+            copy_i = bin(i)
+            if copy_i.count('1') in primes:
+                count +=1
+method2:
+brute force
+def helper(number):
+            if number == 1: return False
+            for i in range(2,int(number**0.5)+1):
+                if number%i == 0:
+                    return False
+            return True
+        for i in range(left,right+1):
+            bin_i = bin(i)[2:].count('1')
+            if helper(bin_i):
+                res += 1
 
 comment:
