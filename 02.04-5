@@ -7,10 +7,23 @@
 
 
 
-
-
 Jane:
-
+1.
+for i in range(0, len(s), 2*k):
+ res += s[i:i+k][::-1] + s[i+k:i+2*k]
+注意：
+1)for loop中以2*k的步长前进
+2)用[::-1]可以减少memory
+2.
+本质是计算每一个node左右两边加起来的最长path
+注意：
+1）nonlocal的使用
+3.
+return (s.count('A')<2) and ('LLL' not in s)
+4.
+split, then reverse
+5.
+用bfs，每次加入queue的为(node, level)的一个tuple
 
 
 
