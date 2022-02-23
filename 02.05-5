@@ -7,8 +7,12 @@
 
 
 Jane:
-
-
+1.
+排序后，相邻为一组，选min那个
+2.
+自下向上，用recursive
+nonlocal tilt_sum，每次recursive都加上当前的左右子树之差
+3.
 
 
 
