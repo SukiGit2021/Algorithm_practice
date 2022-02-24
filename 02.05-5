@@ -13,7 +13,12 @@ Jane:
 自下向上，用recursive
 nonlocal tilt_sum，每次recursive都加上当前的左右子树之差
 3.
-
+两个for循环，注意判断，newList中每一个list是否装满，
+若未满，则直接append(k)，若已满，则append([k])
+4.
+自上向下，挨个节点比对
+5.
+把candyTpye变成set后判断与n/2的关系
 
 
 Suki:
