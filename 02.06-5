@@ -8,6 +8,25 @@
 
 
 Jane:
+1.
+preorder就是dfs
+recursively use dfs and get the node.val
+2.
+postorder就是stack遍历结果的reverse
+用stack遍历应该是root, left, right。由于root是最先pop，所以结果是root, right, left
+reverse后是 left, right, root
+3.
+建立dict，对每个key进行判断，看是否有比其大1的key，有的话在res和两个value和之间取最大值
+4.
+SELECT name, population, area 
+FROM World
+WHERE area >= 3000000 
+    OR population >= 25000000;
+5.
+SELECT class
+FROM Courses
+GROUP BY class
+HAVING COUNT(student)>=5;
 
 
 
