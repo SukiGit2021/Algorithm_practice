@@ -12,6 +12,15 @@ Jane:
 1.
 每次都是从左上角开始，所以每次都覆盖的区域，即最小值，就是最后的结果
 2.
+建立两个dict, dict1={item:i}, dict2中的item为在dict1中出现的，i为dict1中的index和list2中index之和。再取dict2中value最小的item输出
+3.
+挨着计数，只有当连续三个0时，中间才可以放花盆
+注意：list首尾加0
+4.
+dfs用recursive
+如果没有left，只有right，用'()'。当有left时候，左右括号，中间recursively调用root.left；当有right时候，左右括号，中间recursively调用root.right。
+5.
+recursively add t1.val + t2.val
 
 
 
