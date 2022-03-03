@@ -9,6 +9,21 @@
 
 
 Jane:
+1.
+SELECT id, movie, description, rating
+FROM Cinema
+WHERE id % 2 = 1 AND description NOT LIKE 'boring'
+ORDER BY rating DESC
+2.
+UPDATE Salary SET sex = IF(sex='m','f','m');
+3.
+先排序。通常情况下来说，最大的三个数字之积最大。但是如果有负数的情况，很有可能最小负数的绝对值大于最大值，因此如果两个最小负数之积为正数，可能最有助于max product。
+因此比较[-1]*[-2]*[-3]和[0]*[1]*[-1]，取max
+4.
+queue是bfs，当queue有元素时（即为同一层node），记录元素个数，然后把每个node都pop出来，计算平均值。
+5.
+A sliding window moves from the first one to the last one. When it moves forward, it needs to substract the first one in the previous window, 
+and add the last one in the current window.
 
 
 
