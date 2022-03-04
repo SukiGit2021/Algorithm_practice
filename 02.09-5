@@ -9,6 +9,18 @@
 
 
 Jane:
+1. 
+第一个返回的数是重复的。用nums的和减去set(nums)的和即可
+第二个返回的是正常的数。因为数字从1开始，本来的末项为list长度。因此本来的和用等差数列即为（首项+末项）/项数，最后减去sum(set(nums))即可
+2.
+recursively遍历每一个node，判断k-node.val是否在set里。如果在，返回true；若不在，则把当前node.val存在set里，并对左右节点分别遍历
+3.
+对每个char判断，最后判断position是否都为0
+4.
+周围所有加起来取平均值
+5.
+bfs把每个val都加入一个list，最后对list取set，并排序
+
 
 
 
