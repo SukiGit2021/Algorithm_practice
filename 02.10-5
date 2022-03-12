@@ -8,6 +8,32 @@
 
 
 Jane:
+1.
+method1:
+双指针i,j，比较j和j-1的大小，以及max和(j-i+1)的大小
+method2:
+Dynamic Progressing -- Everything can be applied with DP. lol
+1)建立一个list -- dp来储存到每个元素为止的max sub num
+2)遍历所有nums的元素，如果比前一个元素大，则把dp对应index的值改为前一个值+1
+3)输出dp中最大值
+2.
+双指针从0和len(s)-1出发
+当两个element相等，则往中间移动
+若不相等，则需要判断是左边还是右边的元素出了问题
+在这里可以执行另外一个函数，传入的参数是l+1或者r-1。并且在这个函数里，如果遇到了不等的情况，直接return False，因为最多只能一个element出错。
+3.
+建立一个nums list，挨个判断
+4.
+return '00' not in s and '11' not in s
+5.
+First, I count the number of 1 or 0 grouped consecutively.
+For example "0110001111" will be [1, 2, 3, 4].
+
+Second, for any possible substrings with 1 and 0 grouped consecutively, the number of valid substring will be the minimum number of 0 and 1.
+For example "0001111", will be min(3, 4) = 3, ("01", "0011", "000111")
+PS:
+1) replace '01' with '0 1', '10' with '1 0', to separate different numbers
+2) zip()
 
 
 
