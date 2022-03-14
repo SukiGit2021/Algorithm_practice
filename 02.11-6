@@ -10,7 +10,20 @@
 
 
 Jane:
-
+1.
+dic={key:number; value: [indexes]}
+第一次遍历，建立dic字典，并找到max_degree
+第二次遍历dic的values，找到max_degree，同时储存最小长度
+2.
+用trav储存节点，如果node比val大，trav=node.left; 如果小，trav=node.right
+3.
+使用heapq自动、快速排序。当pool中只有k个数字时，最小的值就是第k大的值。所以当pool中的值多于k个时，需要pop出来，保持pool中只有k个。pool[0]就是第k大的值
+4.
+二分法
+5.
+error
+6.
+error
 
 
 
