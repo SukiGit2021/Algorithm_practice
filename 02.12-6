@@ -18,7 +18,16 @@ s.tolower()
 先排序，创建一个set存放检查过的word
 对每个word遍历，如果word[:-1]在set里，则word可以由前面的词组成，并且和longest_word比较，储存更长的那个
 4.
-
+想象pivot index是一个滑动窗口，左边最开始为0，右边最开始为sum(nums)
+随着窗口向右滑动，左边增加，右边减小，直到平衡或者-1
+5.
+遍历left和right中的每个number
+注意:
+1)all()的用法
+2)把num转化为string，然后把每个char拿去计算
+6.
+Iteratively using dfs to check if the 4-directionally number is in the image range and if it's equal to the original color
+Until it checks all numbers
 
 
 
