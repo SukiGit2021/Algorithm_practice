@@ -8,7 +8,24 @@
 
 
 Jane:
-
+1.
+compare ASCII values
+2.
+DP:
+1) create the dp list and the length is equal to the cost list
+2) set the initial cases
+3) for the left elements, dp[i] = cost[i] + min(dp[i-1], dp[i-2])
+4) return the last one or the last second one
+3.
+if the largest one is larger than 2*second_largest one, so it satisfies the question
+4.
+1) create a plate list and push all non-character chars
+2) traverse all elements in the sorted words list
+3) for each word, check each char and remove it from the copy plate. Finally checking if there is any char in the copy l=plate
+5.
+1) 按照通常的二进制数字大小，列出可能的primes list
+2) 二进制转化，并且计算1的个数 bits=bin(i).count(i)
+3) 判断是否在primes list中
 
 
 
