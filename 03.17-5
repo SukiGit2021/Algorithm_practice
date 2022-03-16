@@ -1,11 +1,24 @@
 1. Toeplitz Matrix (#766)
 2. Jewels and Stones (#771)
-3. Valid Phone Numbers (#193)
-4. Tenth Line (#195)
-5. Happy Number (#202)
+3. Happy Number (#202)
+4. Implement Stack using Queues (#225)
+5.
 
 
 Jane:
+1.
+对每一行的每一个元素进行遍历，如果不等于右斜下方的元素，则返回false
+2.
+计算stones中有多少在jewels里
+3.
+每次计算都把number放到set里，用set判断跳出循环的条件
+4.
+用deque()
+5.
+递归地把root.left = self.invertTree(root.right)
+
+
+
 
 
 Suki:
