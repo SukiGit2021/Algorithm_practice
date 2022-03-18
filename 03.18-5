@@ -1,16 +1,24 @@
 1. Third Maximum Number (#414)
 2. Longest Uncommon Subsequence I (#521)
-3. Kth Largest Element in a Stream (#703)
-4. Design HashSet (#705)
-5. Design HashMap (#706)
-6. Minimum Distance Between BST Nodes (#783)
-7. Rotate String (#796)
-8. Unique Morse Code Words (#804)
+3. Minimum Distance Between BST Nodes (#783)
+4. Rotate String (#796)
+5. Unique Morse Code Words (#804)
 
 
 
 Jane:
-
+1.
+建立一个list，存放最大的三个number
+2.
+if a == b :
+    return -1
+return max(len(a), len(b))
+3.
+先用DFS到达左边最底部，然后挨个向上遍历，每个节点同时遍历右边的分枝
+4.
+在长度相等的情况下，比较s是否在goal+goal的新string里
+5.
+把所有的word翻译好后放在list里，最后把list转化为set，输出set长度
 
 
 
