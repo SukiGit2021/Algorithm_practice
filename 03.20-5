@@ -1,0 +1,24 @@
+1. Number of Lines To Write String (806)
+2. Most Common Word (819)
+3. Shortest Distance to a Character (821)
+4. Goat Latin (824)
+
+
+Jane:
+1.
+找到每个char的长度，每次加入当前行时和100比较。如果大于100，则行数加1，并且当前行的pixel数也需要改变
+2.
+建立一个dic存放word和出现次数，并用count存放当前出现的最大次数以及单词。遍历words，并比较
+3.
+DP:
+创建一个res list，记录每个位置离c的距离。设置c的位置为0，非c的位置为len(s)
+从前往后，后往前分别遍历。
+res[i] = min(res[i], res[i-1]+1)
+res[i] = min(res[i], res[i+1]+1)
+4.
+挨着遍历，比较，增加string
+
+
+
+
+Suki:
