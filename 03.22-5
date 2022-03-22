@@ -1,0 +1,26 @@
+1. Positions of Large Groups 830
+2. Flipping an Image 832
+3. Rectangle Overlap 836
+4. Backspace String Compare 844
+5. Peak Index in a Mountain Array 852
+
+
+
+Jane:
+1.
+双指针，当char相同时，指针往后移，直到不相同，判断之间的距离
+2.
+双指针。
+只有当两个num相同的时候，才会XOR。如果不同的话，invert再flip，值和原来是一样的。
+3.
+return rec1[0] < rec2[2] and rec2[0] < rec1[2] and rec1[1] < rec2[3] and rec2[1] < rec1[3]
+4.
+用stack，遇到#就pop，不是#就push。比较最后的list
+5.
+return arr.index(max(arr))
+
+
+
+
+Suki:
+
