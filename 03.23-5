@@ -6,6 +6,23 @@
 
 
 Jane:
+1.
+列出所有情况。
+1)长度不等，false
+2)s和goal相同，s内部有相同的char，true
+3)比较s和goal不同，如果只有两组数据不同，并且第二组数据invert等于第一组数据，true
+2.
+只需要用five, ten来存放5和10的数量。
+当bill=5，five++；当bill=10，five--，ten++；当bill=20，five--,ten--,或者five -= 3
+补完钱后判断five的数量是否小于零
+3.
+两个for循环，挨个添加
+4.
+DP
+注意：
+bin(8)=0b1000，因此遍历时候从index=2开始
+5.
+iteeratively把leaf加入list，并比较list是否相等
 
 
 
