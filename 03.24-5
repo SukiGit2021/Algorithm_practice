@@ -1,11 +1,24 @@
 1. Middle of the Linked List 876
-2. Projection Area of 3D Shapes 883
-3. Uncommon Words from Two Sentences 884
-4. Fair Candy Swap 888
-5. Surface Area of 3D Shapes 892
+2. Uncommon Words from Two Sentences 884
+3. Fair Candy Swap 888
+4. SMonotonic Array 896
+5. Increasing Order Search Tree 897
 
 
 Jane:
+1.
+设置快慢双指针，快指针的移动速度是慢指针的两倍，当快指针移动到底部的时候，慢指针就会指向中间。
+2.
+建立字典，输出出现次数为1的words
+注意：
+collections.Counter()的用法
+3.
+dif=(sum[A]-sum(B))/2找到A和B目前距离fair的差值。然后遍历B中的元素，查找dif+b是否在A中。
+4.
+设置flag。当后比前大，flag++;当后比前小，flag--；当相等，N = len(nums)--
+最后比较abs(flag) == N
+5.
+先用inorder把每个节点的value加入list。再建立一个新的tree，挨着把value_list中的值加入。
 
 
 
