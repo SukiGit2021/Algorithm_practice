@@ -1,0 +1,26 @@
+1. Sort Array By Parity 905
+2. Smallest Range I 908
+3. Reverse Only Letters 917
+4. Sort Array By Parity II 922
+5. Long Pressed Name 925
+
+
+Jane:
+1.
+双指针，当beg为奇数，end为偶数时候交换
+2.
+If min(A) + K < max(A) - K, then return max(A) - min(A) - 2 * K
+If min(A) + K >= max(A) - K, then return 0
+3.
+双指针，遇到符号就跳过
+4.
+双指针，分别从0，1开始，遇到正确的位置就+2，否则停住。当两个指针都停下来的时候，就进行交换
+5.
+双指针，i和j
+当是long pressed name的时候，
+name[i]和typed[j]相等，则i+=1，往后移1步。或者typed[j]和typed[j-1]相等。
+如果都不满足，则是false
+
+
+
+Suki:
