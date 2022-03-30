@@ -6,8 +6,22 @@
 
 
 Jane:
-
-
+1.
+split后把name按照+split，然后replace('.', '')。最后加入set中
+2.
+建立一个queue，如果第一个element比t-3000小，则pop出去。循环直到跳出。
+3.
+建立digits和letters两个list，遍历logs，识别每个log，分别加入各自的list。
+对letters list排序，最后把两个list合并
+注意：
+lambda函数的用法
+4.
+BFS，建立queue，对每个node判断，如果比low小，只append右边的子节点；如果比high大，只append左边的子节点。
+否则append所有子节点，并且加上val
+5.
+Two people climb from left and from right separately.
+If they are climbing the same mountain,
+they will meet at the same point.
 
 
 Suki:
