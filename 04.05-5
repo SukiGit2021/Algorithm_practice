@@ -6,6 +6,28 @@
 
 
 Jane:
+1.
+用collections.Counter统计出第一个word，分别与后面的word来Counter比较，取每个key的最小值。
+若后面的word中无这个key，则为0，并且key不再Counter中。
+最后输出elements()
+注意：Counter的用法 https://pythontic.com/containers/counter/elements
+2.
+先从小到大排序，从最小值开始遍历，如果有负数，就使用k的次数，直到把所有负数翻转完。
+sum数组中所有值，再去判断此时k中是否还有次数。如果是偶数，则不用理会；如果是奇数，则需要选取数组中最小的值。
+用sum后的值减去2倍最小值。
+3.
+n + coplement = 11...111
+n + complement + 1 =10..00
+4.
+sum arry后除以3，如果有余数，则return false。
+创建part和cnt。遍历arry，每个num都加到part里，直到part=average，cnt++，part重新清零。
+注意：
+当sum可以被三等分，前两次都满足的情况下，剩下的不管是cnt为3或者大于3，都是能满足要求的。比如4个0的情况。
+5.
+每次判断数字时，把之前的数字左移一位，再加上目前的数字
+b << 1 | num
+
+
 
 
 Suki:
