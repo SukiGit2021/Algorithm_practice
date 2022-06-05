@@ -1,1 +1,18 @@
+1021. Remove Outermost Parentheses
+1022. Sum of Root To Leaf Binary Numbers
+1025. Divisor Game
 
+Jane:
+1021.
+用变量opened来表示目前的开合度。
+当遇到（时，开合度增加，就+1；当遇到）时，开合度减少，就-1.
+因此，最初会判断每个char是什么，并且根据opened的情况，来决定是否把char加入到result list中。
+
+1022.
+
+1025.
+
+
+
+
+Suki:
