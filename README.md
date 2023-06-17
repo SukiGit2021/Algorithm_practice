@@ -1,3 +1,2 @@
-# CQ-mountain-beer
 
-### Jane & Suki
+### No pain no gain. Practice more!
